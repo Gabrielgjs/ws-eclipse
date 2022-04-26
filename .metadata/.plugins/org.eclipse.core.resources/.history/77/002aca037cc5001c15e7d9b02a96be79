@@ -1,0 +1,46 @@
+package application;
+
+import model.Triangle;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner scan = new Scanner(System.in);
+		
+		Triangle x , y;
+		x = new Triangle();
+		y = new Triangle();
+		
+		
+		System.out.println("Entre the measures of trinagle X: ");
+		x.A = scan.nextDouble();
+		x.B = scan.nextDouble();
+		x.C = scan.nextDouble();
+		System.out.println("Entre the measures of trinagle Y: ");
+		y.A = scan.nextDouble();
+		y.B = scan.nextDouble();
+		y.C = scan.nextDouble();
+		
+		double p = (x.A + x.B + x.C) / 2.0;
+		double areaX = Math.sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+		
+		 p = (y.A + y.B + y.C) / 2.0;
+		double areaY = Math.sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+		
+		
+		System.out.printf("Trinagle X area : %.4f%n", areaX);
+		System.out.printf("Trinagle Y area : %.4f%n", areaY);
+		
+		if ( areaX > areaY) {
+			System.out.println("Larger area: X");
+		}else {
+			System.out.println("Larger area: Y");
+		}
+		
+		scan.close();
+	} 
+
+}

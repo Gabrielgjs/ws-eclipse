@@ -1,0 +1,17 @@
+package model;
+
+public class Triangle {
+	public Double A;
+	public Double B;
+	public Double C;
+	
+	public Triangle() {
+	}
+	
+	public Triangle(Double a, Double b, Double c) {
+		A = a;
+		B = b;
+		C = c;
+	}
+	
+}
