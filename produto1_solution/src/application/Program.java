@@ -11,7 +11,6 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
 		
-		Product p1;
 		
 		System.out.println("Enter product data");
 		System.out.print("Name: ");
@@ -20,8 +19,10 @@ public class Program {
 		double price = scan.nextDouble();
 		System.out.print("Quantity in stock: ");
 		int quantity = scan.nextInt();
+		Product p1 = new Product(name, price, quantity);
 		
-		p1 = new Product(name, price, quantity);
+		p1.setName("Computer");
+		System.out.println("Update name: " + p1.getName());
 		
 		System.out.println();
 		System.out.print("Product data:" + p1);
