@@ -16,6 +16,7 @@ public class Program {
 		System.out.print("Enter account number: ");
 		int number = scan.nextInt();
 		System.out.print("Enter account holder: ");
+		scan.nextLine();
 		String name = scan.next();
 		System.out.println("Is there na initial deposit (y/n)? ");
 		char choice = scan.next().charAt(0);
@@ -45,6 +46,8 @@ public class Program {
 		c1.withdraw(amount);
 		System.out.println("Updated account data: ");
 		System.out.println("Account " + c1);
+		
+		scan.close();
 		
 	}
 
