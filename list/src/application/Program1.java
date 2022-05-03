@@ -67,5 +67,14 @@ public class Program1 {
 		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		return emp != null;
 	}
+	
+	/*public static int position(List<Employee> list, int id) {
+		for (int i =0; i < list.size(); i++) {
+			if(list.get(i).getId() == id) {
+				return i;
+			}
+		}
+		return -1;
+	}*/
 
 }
