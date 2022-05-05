@@ -16,6 +16,7 @@ public class ProgramWorker {
 	public static void main(String[] args) throws ParseException {
 		Locale.setDefault(Locale.US);
 		Scanner scan = new Scanner(System.in);
+		//Instacia classe para formatar Data.
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
 		System.out.print("Enter department's name: ");
@@ -47,6 +48,7 @@ public class ProgramWorker {
 		System.out.println();
 		System.out.print("Enter month and year to calculate income (MM/YYYY): ");
 		String monthAndYear = scan.next();
+		//recorta variavel monthAndYear para pegar mês e ano.
 		int month = Integer.parseInt(monthAndYear.substring(0, 2));
 		int year = Integer.parseInt(monthAndYear.substring(3));
 		System.out.println("Name: " + worker.getName());
