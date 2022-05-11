@@ -3,7 +3,6 @@
     <fullyQualifiedTypeName name="model.Triangle"/>
     <fullyQualifiedTypeName name="util.Calculator"/>
     <fullyQualifiedTypeName name="util.CurrencyConverter"/>
-    <fullyQualifiedTypeName name="entities.Account"/>
     <fullyQualifiedTypeName name="entities.Student"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
     <fullyQualifiedTypeName name="entities.Employee"/>
@@ -27,4 +26,6 @@
     <fullyQualifiedTypeName name="entities.Product"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="entities.Account"/>
+    <fullyQualifiedTypeName name="entities.BusinessAccount"/>
 </qualifiedTypeNameHistroy>
