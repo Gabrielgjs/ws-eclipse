@@ -32,9 +32,7 @@ public class Program {
 			SavingsAccount acc5 = (SavingsAccount)acc3;
 			acc5.updateBalance();
 			System.out.println("Update!");
-			
 		}
-	
 	}
 
 }
